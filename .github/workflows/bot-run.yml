@@ -1,0 +1,31 @@
+name: Run WhatsApp Bot
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run WhatsApp bot
+        env:
+          HOST_NAME: ${{ secrets.HOST_NAME }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          IMAGE_API_KEY: ${{ secrets.IMAGE_API_KEY }}
+          NASA_API_KEY: ${{ secrets.NASA_API_KEY }}
+          OPEN_AI_API_KEY: ${{ secrets.OPEN_AI_API_KEY }}
+          DEEP_API_KEY: ${{ secrets.DEEP_API_KEY }}
+        run: npm start
