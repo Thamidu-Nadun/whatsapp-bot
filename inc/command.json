@@ -1,0 +1,27 @@
+{
+    "commands": {
+        "alive": {
+            "description": "give whatsapp bot status like online or not online."
+        },
+        "/img": {
+            "description": "Send images on the internet",
+            "example": "/img cat",
+            "source": "unPlash"
+        },
+        "/download": {
+            "description": "Download any file on the internet",
+            "example": "/download https://example.com/example.zip",
+            "source": "Any"
+        },
+        "/nasa": {
+            "description": "Send latest information from NASA",
+            "example": "/nasa",
+            "source": "NASA"
+        },
+        "/ai": {
+            "description": "Ask any questions from GEMINI AI",
+            "example": "/ai _prompt_",
+            "source": "GEMINI"
+        }
+    }
+}

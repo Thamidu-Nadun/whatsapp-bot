@@ -1,0 +1,29 @@
+{
+  "name": "whatsapp-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --no-deprecation index.js",
+    "dev": "nodemon --no-deprecation index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "NadSoft",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/generative-ai": "^0.16.0",
+    "axios": "^1.7.2",
+    "cheerio": "^1.0.0-rc.12",
+    "chromium": "^3.0.3",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "fs": "^0.0.1-security",
+    "glob": "^11.0.0",
+    "nodemon": "^3.1.4",
+    "puppeteer": "^22.14.0",
+    "qrcode-terminal": "^0.12.0",
+    "rimraf": "^6.0.1",
+    "whatsapp-web.js": "^1.25.0"
+  }
+}

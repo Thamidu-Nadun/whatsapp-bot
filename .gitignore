@@ -1,0 +1,7 @@
+node_modules/
+.env
+modules/api/.env
+temp/
+.wwebjs_auth/
+.wwebjs_cache/
+state.json

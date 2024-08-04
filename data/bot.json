@@ -1,0 +1,17 @@
+{
+  "developer": "Nadun",
+  "fullName": "thamidu nadun",
+  "knownAs": "Nadun",
+  "project": "Whatsapp Bot",
+  "description_of_nadun": "Nadun is a developer who works on various projects.",
+  "nadun_contact_details": {
+    "github": "https://github.com/thamidu-nadun",
+    "linkedin": "https://www.linkedin.com/in/thamidu",
+    "blog": "https://nadun.web.lk"
+  },
+  "app": {
+    "name": "Whatsapp Bot",
+    "description": "Whatsapp Bot was made by Nadun",
+    "version": 2.0
+  }
+}
