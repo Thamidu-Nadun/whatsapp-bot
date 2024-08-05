@@ -47,13 +47,13 @@ Welcome to the WhatsApp Bot project using `whatsapp-web.js`! This bot allows you
 
    ```env
    HOST_NAME= USER_NAME
-   GEMINI_API_KEY = YOUR_API_KEY
-   IMAGE_API_KEY= YOUR_API_KEY
-   NASA_API_KEY= YOUR_API_KEY
-   OPEN_AI_API_KEY= YOUR_API_KEY
-   DEEP_API_KEY= YOUR_API_KEY
+   GEMINI_API_KEY = https://ai.google.dev/gemini-api/docs/api-key
+   IMAGE_API_KEY= https://unsplash.com/developers
+   NASA_API_KEY= https://api.nasa.gov/
+   OPEN_AI_API_KEY= https://platform.openai.com/api-keys
+   DEEP_API_KEY= https://deepai.org/                                    
    ```
-
+   *HOST_NAME, GEMINI_API_KEY, IMAGE_API_KEY, NASA_API_KEY is given for free. These keys are must required except NASA_API_KEY*
 ## 🔄 Update & Maintenance
 
 - **Updating Dependencies**: Regularly update your dependencies to the latest versions with:
