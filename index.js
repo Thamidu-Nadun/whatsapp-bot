@@ -17,6 +17,7 @@ const getDictionaryData = require('./modules/api/dic');
 const AI = require('./plugins/ai');
 const dictionary = require('./plugins/dictionary');
 const upload = require('./plugins/upload');
+const fruit = require('./plugins/fruit');
 
 // Configure app data
 const app_data = {
@@ -135,6 +136,19 @@ client.on('message_create', async message => {
             upload(message);
         } catch (error) {
             console.log(error);
+        }
+    }else if (message.body.startsWith('/fruit')){
+        if (message.body.startsWith('/fruit ')){
+            try {
+                const fruit_name = message.body.substring(7).trim();
+                fruit(message,fruit_name);
+            } catch (e) {
+                console.log(e);
+                message.reply('An error occurred while processing your request');
+            }
+
+        }else{
+            message.reply('Enter fruit name\nex:\n\t/fruit apple\n')
         }
     }
 });
