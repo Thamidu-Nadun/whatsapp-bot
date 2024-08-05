@@ -2,7 +2,6 @@
 ![WhatsApp Bot](https://img.shields.io/badge/WhatsApp_Bot-v1.0-brightgreen);
 
 # 📱 WhatsApp Bot using `whatsapp-web.js` 🤖
-
 Welcome to the WhatsApp Bot project using `whatsapp-web.js`! This bot allows you to interact with WhatsApp from your web browser, automating responses and adding custom functionality with ease. 🚀
 
 ## Features 🌟
@@ -95,4 +94,6 @@ For any questions or support, please open an issue in this repository or contact
 Happy botting! 🤖🎉
 
 ---
-# whatsapp-bot
+<div style='text-align: center; font-size: 2em; font-family: monospace; color: lightgreen;'>
+whatsapp-bot
+</div>
