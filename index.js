@@ -18,6 +18,7 @@ const AI = require('./plugins/ai');
 const dictionary = require('./plugins/dictionary');
 const upload = require('./plugins/upload');
 const fruit = require('./plugins/fruit');
+const removeLinks = require('./plugins/link-remover');
 
 // Configure app data
 const app_data = {
@@ -95,7 +96,7 @@ client.on('message_create', async message => {
     } else if (message.body.startsWith('/ai')) {
         try {
             AI(message, jsonData, csvData, chatSession, searchJSON, searchCSV, getAnswerFromAI);
-        }catch(e){
+        } catch (e) {
             console.log(e);
         }
     } else if (message.body.toLowerCase().includes("/img")) {
@@ -137,19 +138,36 @@ client.on('message_create', async message => {
         } catch (error) {
             console.log(error);
         }
-    }else if (message.body.startsWith('/fruit')){
-        if (message.body.startsWith('/fruit ')){
+    } else if (message.body.startsWith('/fruit')) {
+        if (message.body.startsWith('/fruit ')) {
             try {
                 const fruit_name = message.body.substring(7).trim();
-                await fruit(message,fruit_name);
+                await fruit(message, fruit_name);
             } catch (e) {
                 console.log(e);
                 message.reply('An error occurred while processing your request');
             }
 
-        }else{
+        } else {
             message.reply('Enter fruit name\nex:\n\t/fruit apple\n')
         }
+    } else if (message.body.startsWith('/me')) {
+        try {
+            const chat = await message.getChat();
+            const contact = await message.getContact();
+            const userName = contact.pushname || 'User';
+            const userNumber = contact.id._serialized;
+
+            const replyMessage = `Name: ${userName}\nNumber with @c.us: ${userNumber}`;
+            await chat.sendMessage(replyMessage);
+        } catch (e) {
+            console.log(`Failed to retrieve user details: ${e}`);
+        }
+    }
+    try {
+        await removeLinks(message, client);
+    } catch (e) {
+        console.log(`Error in link removal: ${e}`);
     }
 });
 
