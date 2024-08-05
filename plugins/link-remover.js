@@ -1,7 +1,7 @@
 // linkRemover.js
 async function removeLinks(message, client) {
     // Example group names to target
-    const targetGroupNames = ['Test_group'];
+    const targetGroupNames = ['Test_group', 'NadSoft Education'];
 
     const allowedNumbers = [
         '94701370247@c.us'
