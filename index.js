@@ -141,7 +141,7 @@ client.on('message_create', async message => {
         if (message.body.startsWith('/fruit ')){
             try {
                 const fruit_name = message.body.substring(7).trim();
-                fruit(message,fruit_name);
+                await fruit(message,fruit_name);
             } catch (e) {
                 console.log(e);
                 message.reply('An error occurred while processing your request');
