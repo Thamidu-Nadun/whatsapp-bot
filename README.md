@@ -5,14 +5,14 @@
 Welcome to the WhatsApp Bot project using `whatsapp-web.js`! This bot allows you to interact with WhatsApp from your web browser, automating responses and adding custom functionality with ease. 🚀
 
 ## 📚 **Table of Contents**
-1. [Features](features)
-2. [Installation](installation)
-3. [Configuration](configuration)
-4. [Screenshots](screenshots)
-5. [Update](Update)
-6. [Contributing](contributing)
-7. [License](license)
-8. [Support](support)
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Screenshots](#screenshots)
+5. [Update](#Update)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Support](#support)
 ## Features 🌟
 
 - **Automated Responses**: Set up automatic replies to messages based on keywords or patterns.
