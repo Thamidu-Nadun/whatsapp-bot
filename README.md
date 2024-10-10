@@ -9,7 +9,7 @@ Welcome to the WhatsApp Bot project using `whatsapp-web.js`! This bot allows you
 2. [Installation](installation)
 3. [Configuration](configuration)
 4. [Screenshots](screenshots)
-5. [Update & Maintenance](Update & Maintenance)
+5. [Update](Update & Maintenance)
 6. [Contributing](contributing)
 7. [License](license)
 8. [Support](support)
@@ -65,7 +65,9 @@ Welcome to the WhatsApp Bot project using `whatsapp-web.js`! This bot allows you
 
 ## Screenshots
 Here are some screenshot of whatsapp bot
-- [Main](https://i.ibb.co/LSQhxYB/whatsapp-bot-1.png)
+[![Main](https://i.ibb.co/LSQhxYB/whatsapp-bot-1.png)](https://github.com/Thamidu-Nadun/whatsapp-bot)
+ 
+
 ## 🔄 Update & Maintenance
 
 - **Updating Dependencies**: Regularly update your dependencies to the latest versions with:
