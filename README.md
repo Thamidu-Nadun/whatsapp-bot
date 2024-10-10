@@ -9,7 +9,7 @@ Welcome to the WhatsApp Bot project using `whatsapp-web.js`! This bot allows you
 2. [Installation](installation)
 3. [Configuration](configuration)
 4. [Screenshots](screenshots)
-5. [Update](Update & Maintenance)
+5. [Update](Update)
 6. [Contributing](contributing)
 7. [License](license)
 8. [Support](support)
