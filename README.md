@@ -4,6 +4,15 @@
 # 📱 WhatsApp Bot using `whatsapp-web.js` 🤖
 Welcome to the WhatsApp Bot project using `whatsapp-web.js`! This bot allows you to interact with WhatsApp from your web browser, automating responses and adding custom functionality with ease. 🚀
 
+## 📚 **Table of Contents**
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Screenshots](#screenshots)
+5. [Update](#Update)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Support](#support)
 ## Features 🌟
 
 - **Automated Responses**: Set up automatic replies to messages based on keywords or patterns.
@@ -53,6 +62,12 @@ Welcome to the WhatsApp Bot project using `whatsapp-web.js`! This bot allows you
    DEEP_API_KEY= https://deepai.org/                                    
    ```
    *HOST_NAME, GEMINI_API_KEY, IMAGE_API_KEY, NASA_API_KEY are given for free. These keys are must required except NASA_API_KEY*
+
+## Screenshots
+Here are some screenshot of whatsapp bot
+[![Main](https://i.ibb.co/LSQhxYB/whatsapp-bot-1.png)](https://github.com/Thamidu-Nadun/whatsapp-bot)
+ 
+
 ## 🔄 Update & Maintenance
 
 - **Updating Dependencies**: Regularly update your dependencies to the latest versions with:
