@@ -1,10 +1,10 @@
 // linkRemover.js
-async function removeLinks(message, client) {
+async function removeLinks(message, client, bot_name) {
     // Example group names to target
     const targetGroupNames = ['Test_group', 'NadSoft Education'];
 
     const allowedNumbers = [
-        '94701370247@c.us'
+        '94701370248@c.us'
     ];
 
     // Get all chats and filter out the target groups
@@ -33,7 +33,7 @@ async function removeLinks(message, client) {
                     const chat = await message.getChat();
                     const contact = await message.getContact();
                     const userName = contact.pushname || 'User';
-                    const notificationMessage = `${userName}, you are not permitted to send links in this group.`;
+                    const notificationMessage = `${userName}, you are not permitted to send links in this group.\n*${bot_name}*`;
 
                     await chat.sendMessage(notificationMessage);
                     console.log(`Sent notification to ${userName}`);

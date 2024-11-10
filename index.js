@@ -165,7 +165,7 @@ client.on('message_create', async message => {
         }
     }
     try {
-        await removeLinks(message, client);
+        await removeLinks(message, client, app_data.Name);
     } catch (e) {
         console.log(`Error in link removal: ${e}`);
     }
