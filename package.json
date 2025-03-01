@@ -24,6 +24,6 @@
     "puppeteer": "^22.14.0",
     "qrcode-terminal": "^0.12.0",
     "rimraf": "^6.0.1",
-    "whatsapp-web.js": "^1.23.0"
+    "whatsapp-web.js": "1.23.0"
   }
 }
