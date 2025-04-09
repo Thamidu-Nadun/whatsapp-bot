@@ -62,9 +62,7 @@ const header = `
 ┃✵╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷`;
 
-const client = new Client({
-    authStrategy: new LocalAuth()
-});
+const client = new Client();
 
 client.on('ready', () => {
     console.log('Client is ready!');
